@@ -23,6 +23,3 @@ class App extends React.Component {
 	}
 }
 export default App;
-
-// 3maRp6M8epSh6nk-U-_8MgfDII7qZD4Y_dWpBW0kt98
-// v7VxWs5YJI4jkXfwsHLOWpM95dw1pfcuiDSWG_oO4D8
