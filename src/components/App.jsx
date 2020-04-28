@@ -1,6 +1,7 @@
 import React from 'react';
 import unsplash from '../api/unsplash';
 import Search from './Search';
+import ImageList from './ImageList';
 
 class App extends React.Component {
 	state = {
@@ -17,7 +18,8 @@ class App extends React.Component {
 		return (
 			<div className="ui container">
 				<Search onSubmit={this.onSearchSubmit} />
-				<p className="text">Found {this.state.imageCount} images</p>
+				<h5 className="text">{this.state.imageCount ? `Found ${this.state.imageCount} images` : null}</h5>
+				<ImageList images={this.state.imageList} />
 			</div>
 		);
 	}
